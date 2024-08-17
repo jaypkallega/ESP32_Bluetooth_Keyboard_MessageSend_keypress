@@ -1,11 +1,12 @@
 #include <Arduino.h> 
 #include <BleKeyboard.h>
 #include "BLEHIDDevice.h"
-BleKeyboard bleKeyboard;
+BleKeyboard bleKeyboard; //starting a keyboard instance
 
 const int buttonPin = 12;
 const int ledPin = 13;
-int buttonState = 0;
+int buttonState = 0; //Initialise button state as not pressed
+
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
