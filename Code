@@ -13,7 +13,7 @@ void setup() {
   pinMode(buttonPin, INPUT);
 
   Serial.begin(115200);
-  Serial.println("Starting BLE work!");
+  Serial.println("Starting Bluetooth");
   bleKeyboard.begin();
    
 }
@@ -26,7 +26,7 @@ if (buttonState == HIGH)
 {
   digitalWrite(ledPin,HIGH);
    if(bleKeyboard.isConnected()) {
-    Serial.println("Sending Hi..."); // for serial monitor. To debugging purpose
+    Serial.println("Button Pressed. Sending Hi..."); // for serial monitor. To debugging purpose
     bleKeyboard.print("Welcome to the bluetooth world");
      }
 }
