@@ -4,7 +4,7 @@
 const int buttonPin = 12;
 const int ledPin = 13;
 int buttonState = 0; //Initialise button state as not pressed
-BleKeyboard bleKeyboard("ESP32 JPKB");
+BleKeyboard bleKeyboard("ESP32 KB");
 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
